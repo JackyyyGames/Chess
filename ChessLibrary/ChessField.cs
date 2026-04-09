@@ -3,19 +3,41 @@ namespace ChessLibrary
 {
     public class ChessField
     {
-        private string[,] Field = new string[8,8];
-        
-        
-        /// <summary>
-        /// A ToString that prints out the Chess-Board
-        /// </summary>
-        /// <returns>returns the string that is the board</returns>
-        /// 
+        private Figure[,] Field = new Figure[8,8];
+
+        public void PlaceFigure(Figure figure,int xcord, int ycord)
+        {
+            if (Field[ycord,xcord] != null)
+            {
+                throw new ArgumentException("The place is not empty");
+            }
+            Field[ycord,xcord] = figure;
+        }
+        public string Get_symbole_on_Field( int ycord, int xcord)
+        {
+            return Field[ycord,xcord].symbol;
+        }
+        //public Figure GetFigure(int ypos, int xpos)
+        //{
+        //    return Field[ypos,xpos];
+        //}
+        public void MoveFigure(char xposstart, int yposstart,char xposto, int yposto)
+        {
+            if (Field[yposstart,CalculateNumberofChar(xposstart)].CanMove(yposstart,CalculateNumberofChar(xposstart)))
+            {
+                
+            }
+            Field[yposto,CalculateNumberofChar(xposto)] = Field[yposstart,CalculateNumberofChar(xposstart)];
+            Field[yposstart,CalculateNumberofChar(xposstart)] = null;
+        }
+        public int CalculateNumberofChar(char charakter)
+        {
+            char c = char.ToLower(charakter);
+            return c -'a' ;
+        }
 
         public override string ToString()
         {
-            var King = new KingFigure(true);
-            Field[1,1] = King.symbole;
             string text = "";
             int rownumber = 1;
             int colorcount = 0;
