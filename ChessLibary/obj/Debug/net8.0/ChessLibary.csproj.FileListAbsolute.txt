@@ -1,0 +1,11 @@
+/config/workspace/Chess/ChessLibary/bin/Debug/net8.0/ChessLibary.deps.json
+/config/workspace/Chess/ChessLibary/bin/Debug/net8.0/ChessLibary.dll
+/config/workspace/Chess/ChessLibary/bin/Debug/net8.0/ChessLibary.pdb
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/ChessLibary.GeneratedMSBuildEditorConfig.editorconfig
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/ChessLibary.AssemblyInfoInputs.cache
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/ChessLibary.AssemblyInfo.cs
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/ChessLibary.csproj.CoreCompileInputs.cache
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/ChessLibary.dll
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/refint/ChessLibary.dll
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/ChessLibary.pdb
+/config/workspace/Chess/ChessLibary/obj/Debug/net8.0/ref/ChessLibary.dll
