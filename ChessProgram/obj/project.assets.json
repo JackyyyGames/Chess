@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "ChessLibary/1.0.0": {
+      "ChessLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/ChessLibary.dll": {}
+          "bin/placeholder/ChessLibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ChessLibary.dll": {}
+          "bin/placeholder/ChessLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ChessLibary/1.0.0": {
+    "ChessLibrary/1.0.0": {
       "type": "project",
-      "path": "../ChessLibary/ChessLibary.csproj",
-      "msbuildProject": "../ChessLibary/ChessLibary.csproj"
+      "path": "../ChessLibrary/ChessLibrary.csproj",
+      "msbuildProject": "../ChessLibrary/ChessLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "ChessLibary >= 1.0.0"
+      "ChessLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -51,8 +51,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/config/workspace/Chess/ChessLibary/ChessLibary.csproj": {
-              "projectPath": "/config/workspace/Chess/ChessLibary/ChessLibary.csproj"
+            "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {
+              "projectPath": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj"
             }
           }
         }

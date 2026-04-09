@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChessLibary\ChessLibary.csproj" />
+    <ProjectReference Include="..\ChessLibrary\ChessLibrary.csproj" />
   </ItemGroup>
 
 </Project>

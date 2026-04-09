@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v8.0": {
       "ChessProgram/1.0.0": {
         "dependencies": {
-          "ChessLibary": "1.0.0"
+          "ChessLibrary": "1.0.0"
         },
         "runtime": {
           "ChessProgram.dll": {}
         }
       },
-      "ChessLibary/1.0.0": {
+      "ChessLibrary/1.0.0": {
         "runtime": {
-          "ChessLibary.dll": {}
+          "ChessLibrary.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ChessLibary/1.0.0": {
+    "ChessLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

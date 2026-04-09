@@ -3,8 +3,6 @@
 /config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessProgram.runtimeconfig.json
 /config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessProgram.dll
 /config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessProgram.pdb
-/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessLibary.dll
-/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessLibary.pdb
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.csproj.AssemblyReference.cache
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.GeneratedMSBuildEditorConfig.editorconfig
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.AssemblyInfoInputs.cache
@@ -16,3 +14,6 @@
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.pdb
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.genruntimeconfig.cache
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ref/ChessProgram.dll
+/config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.sourcelink.json
+/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessLibrary.dll
+/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessLibrary.pdb

@@ -1,2 +1,4 @@
-﻿using ChessLibary;
-Console.WriteLine("Hello, World!");
+﻿using ChessLibrary;
+var Field = new ChessField();
+Console.WriteLine(Field.ToString());
+

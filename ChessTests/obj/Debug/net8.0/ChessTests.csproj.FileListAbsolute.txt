@@ -1,4 +1,3 @@
-/config/workspace/Chess/ChessTests/bin/Debug/net8.0/CoverletSourceRootsMapping_ChessTests
 /config/workspace/Chess/ChessTests/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /config/workspace/Chess/ChessTests/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll
 /config/workspace/Chess/ChessTests/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll
@@ -86,8 +85,6 @@
 /config/workspace/Chess/ChessTests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 /config/workspace/Chess/ChessTests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /config/workspace/Chess/ChessTests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-/config/workspace/Chess/ChessTests/bin/Debug/net8.0/ChessLibary.dll
-/config/workspace/Chess/ChessTests/bin/Debug/net8.0/ChessLibary.pdb
 /config/workspace/Chess/ChessTests/obj/Debug/net8.0/ChessTests.csproj.AssemblyReference.cache
 /config/workspace/Chess/ChessTests/obj/Debug/net8.0/ChessTests.GeneratedMSBuildEditorConfig.editorconfig
 /config/workspace/Chess/ChessTests/obj/Debug/net8.0/ChessTests.AssemblyInfoInputs.cache
@@ -99,3 +96,7 @@
 /config/workspace/Chess/ChessTests/obj/Debug/net8.0/ChessTests.pdb
 /config/workspace/Chess/ChessTests/obj/Debug/net8.0/ChessTests.genruntimeconfig.cache
 /config/workspace/Chess/ChessTests/obj/Debug/net8.0/ref/ChessTests.dll
+/config/workspace/Chess/ChessTests/obj/Debug/net8.0/ChessTests.sourcelink.json
+/config/workspace/Chess/ChessTests/bin/Debug/net8.0/CoverletSourceRootsMapping_ChessTests
+/config/workspace/Chess/ChessTests/bin/Debug/net8.0/ChessLibrary.dll
+/config/workspace/Chess/ChessTests/bin/Debug/net8.0/ChessLibrary.pdb
