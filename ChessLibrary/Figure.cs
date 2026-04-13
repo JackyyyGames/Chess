@@ -11,7 +11,7 @@
     }
     public class Figure
     {
-        private bool isblack;
+        public bool isblack { get; set; }
         private FigureType type;
         public string symbol { get; set; }
 
@@ -42,20 +42,27 @@
                 default: return "?";
             }
         }
-        public bool CanMove(int from, int to)
+        public bool CanMove(int fromx,int fromy, int tox, int toy)
         {
             switch (type)
             {
                 case FigureType.King:
-                    return CanMoveKing( from, to);
+                    return CanMoveKing( fromx, fromy, tox, toy);
 
                 default:
-                    return false;
+                    return true;
             }
         }
-        public bool CanMoveKing( int from,  int to)
+        public bool CanMoveKing(int fromx,int fromy, int tox, int toy)
         {
-            return true;
+            if (((fromx-tox)+(fromy-toy)) >= -2 &&((fromx-tox)+(fromy-toy)) <= 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
 
