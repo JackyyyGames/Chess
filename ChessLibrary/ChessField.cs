@@ -23,10 +23,19 @@ namespace ChessLibrary
             int xstart = CalculateNumberofChar(xposstart);
             int xto = CalculateNumberofChar(xposto);
 
-            if (tomove != null && tomove.CanMove( xstart,yposstart, xto, yposto) && Field[yposto,xto]?.isblack != Field[yposstart,yposto]?.isblack )
+            if (tomove != null && tomove.CanMove(xstart, yposstart, xto, yposto))
             {
-                Field[yposto, CalculateNumberofChar(xposto)] = Field[yposstart, CalculateNumberofChar(xposstart)];
-                Field[yposstart, CalculateNumberofChar(xposstart)] = null;
+                if (Field[yposto, xto] != null && Field[yposto, xto]?.isblack == Field[yposstart, yposto]?.isblack)
+                {
+                    throw new ArgumentException("You want to move at a field that is already yours");
+                }
+                else
+                {
+                    Field[yposto, CalculateNumberofChar(xposto)] = Field[yposstart, CalculateNumberofChar(xposstart)];
+                    Field[yposstart, CalculateNumberofChar(xposstart)] = null;
+                }
+
+
             }
             else
             {
@@ -41,31 +50,31 @@ namespace ChessLibrary
         }
         public void Setup()
         {
-            SetupBackrow(0,false);
-            SetupPawnrow(1,false);
-            SetupBackrow(7,true);
-            SetupPawnrow(6,true);
+            SetupBackrow(0, false);
+            SetupPawnrow(1, false);
+            SetupBackrow(7, true);
+            SetupPawnrow(6, true);
         }
-        private void SetupBackrow(int row,bool isblack)
+        private void SetupBackrow(int row, bool isblack)
         {
-           Field[row,0] = new Figure(isblack, FigureType.Rook); 
-           Field[row,7] = new Figure(isblack, FigureType.Rook); 
+            Field[row, 0] = new Figure(isblack, FigureType.Rook);
+            Field[row, 7] = new Figure(isblack, FigureType.Rook);
 
-           Field[row,1] = new Figure(isblack, FigureType.Knight); 
-           Field[row,6] = new Figure(isblack, FigureType.Knight);
+            Field[row, 1] = new Figure(isblack, FigureType.Knight);
+            Field[row, 6] = new Figure(isblack, FigureType.Knight);
 
-           Field[row,2] = new Figure(isblack, FigureType.Bishop); 
-           Field[row,5] = new Figure(isblack, FigureType.Bishop);
+            Field[row, 2] = new Figure(isblack, FigureType.Bishop);
+            Field[row, 5] = new Figure(isblack, FigureType.Bishop);
 
-           Field[row,3] = new Figure(isblack, FigureType.Queen); 
-           Field[row,4] = new Figure(isblack, FigureType.King);
+            Field[row, 3] = new Figure(isblack, FigureType.Queen);
+            Field[row, 4] = new Figure(isblack, FigureType.King);
         }
-        private void SetupPawnrow(int row,bool isblack)
+        private void SetupPawnrow(int row, bool isblack)
         {
-            for(int i = 0; i <8; i++)
+            for (int i = 0; i < 8; i++)
             {
-                Field[row,i] = new Figure(isblack, FigureType.Pawn);
-           }
+                Field[row, i] = new Figure(isblack, FigureType.Pawn);
+            }
         }
 
         public override string ToString()
