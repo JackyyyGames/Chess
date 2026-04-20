@@ -7,21 +7,34 @@ namespace ChessLibrary
 
         public void PlaceFigure(Figure figure, int xcord, int ycord)
         {
+            if (xcord > 8 || ycord > 8)
+            {
+                throw new ArgumentException($"The place X:{xcord} Y:{ycord} is not on the board");
+            }
             if (Field[ycord, xcord] != null)
             {
                 throw new ArgumentException("The place is not empty");
             }
             Field[ycord, xcord] = figure;
         }
-        public string? Get_symbole_on_Field(int ycord, int xcord)
+        public string? GetSymboleOnField(int ycord, int xcord)
         {
             return Field[ycord, xcord]?.symbol;
         }
         public void MoveFigure(char xposstart, int yposstart, char xposto, int yposto)
         {
-            Figure? tomove = Field[yposstart, CalculateNumberofChar(xposstart)];
-            int xstart = CalculateNumberofChar(xposstart);
-            int xto = CalculateNumberofChar(xposto);
+            Figure? tomove = Field[yposstart, CalculateNumberOfChar(xposstart)];
+            int xstart = CalculateNumberOfChar(xposstart);
+            int xto = CalculateNumberOfChar(xposto);
+
+            if (xto > 8 || yposto > 8)
+            {
+                throw new ArgumentException($"The place X:{xto} Y:{yposto} is not on the board");
+            }
+            if (xstart > 8 || yposstart > 8)
+            {
+                throw new ArgumentException($"The place X:{xstart} Y:{yposstart} is not on the board");
+            }
 
             if (tomove != null && tomove.CanMove(xstart, yposstart, xto, yposto))
             {
@@ -31,11 +44,10 @@ namespace ChessLibrary
                 }
                 else
                 {
-                    Field[yposto, CalculateNumberofChar(xposto)] = Field[yposstart, CalculateNumberofChar(xposstart)];
-                    Field[yposstart, CalculateNumberofChar(xposstart)] = null;
+                    tomove.hasmoved = true;
+                    Field[yposto, CalculateNumberOfChar(xposto)] = Field[yposstart, CalculateNumberOfChar(xposstart)];
+                    Field[yposstart, CalculateNumberOfChar(xposstart)] = null;
                 }
-
-
             }
             else
             {
@@ -43,7 +55,7 @@ namespace ChessLibrary
             }
 
         }
-        public int CalculateNumberofChar(char charakter)
+        public int CalculateNumberOfChar(char charakter)
         {
             char c = char.ToLower(charakter);
             return c - 'a';

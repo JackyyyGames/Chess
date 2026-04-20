@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/config/workspace/Chess/ChessTests/ChessTests.csproj": {}
+    "/workspace/Chess/ChessTests/ChessTests.csproj": {}
   },
   "projects": {
-    "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {
+    "/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
+        "projectUniqueName": "/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
         "projectName": "ChessLibrary",
-        "projectPath": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
+        "projectPath": "/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
         "packagesPath": "/config/.nuget/packages/",
-        "outputPath": "/config/workspace/Chess/ChessLibrary/obj/",
+        "outputPath": "/workspace/Chess/ChessLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/config/.nuget/NuGet/NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "/config/workspace/Chess/ChessTests/ChessTests.csproj": {
+    "/workspace/Chess/ChessTests/ChessTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/config/workspace/Chess/ChessTests/ChessTests.csproj",
+        "projectUniqueName": "/workspace/Chess/ChessTests/ChessTests.csproj",
         "projectName": "ChessTests",
-        "projectPath": "/config/workspace/Chess/ChessTests/ChessTests.csproj",
+        "projectPath": "/workspace/Chess/ChessTests/ChessTests.csproj",
         "packagesPath": "/config/.nuget/packages/",
-        "outputPath": "/config/workspace/Chess/ChessTests/obj/",
+        "outputPath": "/workspace/Chess/ChessTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/config/.nuget/NuGet/NuGet.Config"
@@ -79,8 +79,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {
-                "projectPath": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj"
+              "/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {
+                "projectPath": "/workspace/Chess/ChessLibrary/ChessLibrary.csproj"
               }
             }
           }

@@ -15,6 +15,8 @@
         private FigureType type;
         public string symbol { get; set; }
 
+        public bool hasmoved{get; set;}
+
 
         public Figure(bool isblack, FigureType type)
         {
@@ -48,6 +50,8 @@
             {
                 case FigureType.King:
                     return CanMoveKing( fromx, fromy, tox, toy);
+                case FigureType.Pawn:
+                    return CanMovePawn(fromx,fromy,tox,toy);
 
                 default:
                     return true;
@@ -55,13 +59,41 @@
         }
         public bool CanMoveKing(int fromx,int fromy, int tox, int toy)
         {
-            if (((fromx-tox)+(fromy-toy)) >= -2 &&((fromx-tox)+(fromy-toy)) <= 2)
+            if (((fromx-tox)+(fromy-toy)) >= -1 &&((fromx-tox)+(fromy-toy)) <= 1)
             {
                 return true;
             }
             else
             {
                 return false;
+            }
+        }
+
+        public bool CanMovePawn(int fromx,int fromy, int tox, int toy)
+        {
+            if (this.hasmoved == true)
+            {
+                if (this.isblack == true)
+                {
+                   //return toy-fromy <= 2 && fromx == tox; 
+                   return fromx == tox;
+                }  
+                else
+                {
+                    //return fromy-toy <= 2 && fromx == tox; 
+                    return fromx == tox;
+                }
+            }
+            else
+            {
+                if (this.isblack == true)
+                {
+                   return tox-fromx <= 1 && fromy == toy; 
+                }  
+                else
+                {
+                    return fromx-tox <= 1 && fromy == toy; 
+                }
             }
         }
 
