@@ -1,4 +1,3 @@
-/config/workspace/Chess/ChessLibrary/bin/Debug/net8.0/ChessLibrary.deps.json
 /config/workspace/Chess/ChessLibrary/bin/Debug/net8.0/ChessLibrary.dll
 /config/workspace/Chess/ChessLibrary/bin/Debug/net8.0/ChessLibrary.pdb
 /config/workspace/Chess/ChessLibrary/obj/Debug/net8.0/ChessLibrary.GeneratedMSBuildEditorConfig.editorconfig
@@ -9,4 +8,3 @@
 /config/workspace/Chess/ChessLibrary/obj/Debug/net8.0/ChessLibrary.dll
 /config/workspace/Chess/ChessLibrary/obj/Debug/net8.0/refint/ChessLibrary.dll
 /config/workspace/Chess/ChessLibrary/obj/Debug/net8.0/ChessLibrary.pdb
-/config/workspace/Chess/ChessLibrary/obj/Debug/net8.0/ref/ChessLibrary.dll

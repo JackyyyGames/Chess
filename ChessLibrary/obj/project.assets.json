@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
+      "projectUniqueName": "/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
       "projectName": "ChessLibrary",
-      "projectPath": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
+      "projectPath": "/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
       "packagesPath": "/config/.nuget/packages/",
-      "outputPath": "/config/workspace/Chess/ChessLibrary/obj/",
+      "outputPath": "/workspace/Chess/ChessLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/config/.nuget/NuGet/NuGet.Config"
