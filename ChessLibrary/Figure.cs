@@ -75,24 +75,22 @@
             {
                 if (this.isblack == true)
                 {
-                   //return toy-fromy <= 2 && fromx == tox; 
-                   return fromx == tox;
+                   return toy-fromy <= 1 && fromx == tox; 
                 }  
                 else
                 {
-                    //return fromy-toy <= 2 && fromx == tox; 
-                    return fromx == tox;
+                    return fromy-toy <= 1 && fromx == tox; 
                 }
             }
             else
             {
                 if (this.isblack == true)
                 {
-                   return tox-fromx <= 1 && fromy == toy; 
+                   return toy-fromy <= 2 && fromx == tox; 
                 }  
                 else
                 {
-                    return fromx-tox <= 1 && fromy == toy; 
+                    return fromy-toy <= 2 && fromx == tox; 
                 }
             }
         }

@@ -13,21 +13,11 @@
         "runtime": {
           "ChessProgram.dll": {}
         }
-      },
-      "ChessLibrary/1.0.0": {
-        "runtime": {
-          "ChessLibrary.dll": {}
-        }
       }
     }
   },
   "libraries": {
     "ChessProgram/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ChessLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {}
+    "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {}
   },
   "projects": {
-    "/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {
+    "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
+        "projectUniqueName": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
         "projectName": "ChessLibrary",
-        "projectPath": "/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
+        "projectPath": "/config/workspace/Chess/ChessLibrary/ChessLibrary.csproj",
         "packagesPath": "/config/.nuget/packages/",
-        "outputPath": "/workspace/Chess/ChessLibrary/obj/",
+        "outputPath": "/config/workspace/Chess/ChessLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/config/.nuget/NuGet/NuGet.Config"

@@ -21,7 +21,7 @@ namespace ChessLibrary
         {
             return Field[ycord, xcord]?.symbol;
         }
-        public void MoveFigure(char xposstart, int yposstart, char xposto, int yposto)
+        public void MoveFigure(char xposstart, int yposstart, char xposto, int yposto, bool blackatturn)
         {
             Figure? tomove = Field[yposstart, CalculateNumberOfChar(xposstart)];
             int xstart = CalculateNumberOfChar(xposstart);
@@ -29,18 +29,26 @@ namespace ChessLibrary
 
             if (xto > 8 || yposto > 8)
             {
-                throw new ArgumentException($"The place X:{xto} Y:{yposto} is not on the board");
+                throw new ArgumentException($"The place X:{xposto} Y:{yposto} is not on the board!");
             }
             if (xstart > 8 || yposstart > 8)
             {
-                throw new ArgumentException($"The place X:{xstart} Y:{yposstart} is not on the board");
+                throw new ArgumentException($"The place X:{xposstart} Y:{yposstart} is not on the board!");
+            }
+            if (tomove == null)
+            {
+                throw new ArgumentException($"At the place X:{xposstart} Y:{yposstart} is no figure!");
+            }
+            if (tomove.isblack != blackatturn)
+            {
+                throw new ArgumentException($"The Figure at X:{xposstart} Y:{yposstart} is not yours it belongs to your opponent!");
             }
 
-            if (tomove != null && tomove.CanMove(xstart, yposstart, xto, yposto))
+            if (tomove.CanMove(xstart, yposstart, xto, yposto))
             {
                 if (Field[yposto, xto] != null && Field[yposto, xto]?.isblack == Field[yposstart, yposto]?.isblack)
                 {
-                    throw new ArgumentException("You want to move at a field that is already yours");
+                    throw new ArgumentException("You want to move at a field that is already yours!");
                 }
                 else
                 {

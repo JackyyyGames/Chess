@@ -10,10 +10,3 @@
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.dll
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/refint/ChessProgram.dll
 /config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.pdb
-/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessProgram.deps.json
-/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessProgram.runtimeconfig.json
-/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessLibrary.dll
-/config/workspace/Chess/ChessProgram/bin/Debug/net8.0/ChessLibrary.pdb
-/config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.csproj.CopyComplete
-/config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ChessProgram.genruntimeconfig.cache
-/config/workspace/Chess/ChessProgram/obj/Debug/net8.0/ref/ChessProgram.dll
