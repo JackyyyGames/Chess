@@ -21,6 +21,10 @@ namespace ChessLibrary
         {
             return Field[ycord, xcord]?.symbol;
         }
+        public Figure? GetFigureOnField(int xcord,int ycord)
+        {
+            return Field[ycord,xcord];
+        }
         public void MoveFigure(char xposstart, int yposstart, char xposto, int yposto, bool blackatturn)
         {
             Figure? tomove = Field[yposstart, CalculateNumberOfChar(xposstart)];
@@ -44,7 +48,7 @@ namespace ChessLibrary
                 throw new ArgumentException($"The Figure at X:{xposstart} Y:{yposstart} is not yours it belongs to your opponent!");
             }
 
-            if (tomove.CanMove(xstart, yposstart, xto, yposto))
+            if (tomove.CanMove(xstart, yposstart, xto, yposto, Field))
             {
                 if (Field[yposto, xto] != null && Field[yposto, xto]?.isblack == Field[yposstart, yposto]?.isblack)
                 {
